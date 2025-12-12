@@ -35,8 +35,6 @@ Partial Class Inventory
         Me.Actions = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Category = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
@@ -48,8 +46,10 @@ Partial Class Inventory
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.btnNotifications = New System.Windows.Forms.Button()
         Me.pnlSummaryCards = New System.Windows.Forms.Panel()
+        Me.btnNotifications = New ReaLTaiizor.Controls.Button()
+        Me.TextBox1 = New ReaLTaiizor.Controls.BigTextBox()
+        Me.Category = New ReaLTaiizor.Controls.ComboBoxEdit()
         CType(Me.InventoryGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RoundedPane21.SuspendLayout()
         Me.RoundedPane22.SuspendLayout()
@@ -84,7 +84,7 @@ Partial Class Inventory
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.InventoryGrid.DefaultCellStyle = DataGridViewCellStyle2
         Me.InventoryGrid.EnableHeadersVisualStyles = False
-        Me.InventoryGrid.Location = New System.Drawing.Point(35, 450)
+        Me.InventoryGrid.Location = New System.Drawing.Point(50, 349)
         Me.InventoryGrid.Name = "InventoryGrid"
         Me.InventoryGrid.ReadOnly = True
         Me.InventoryGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -98,7 +98,7 @@ Partial Class Inventory
         Me.InventoryGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.InventoryGrid.RowHeadersVisible = False
         Me.InventoryGrid.RowHeadersWidth = 51
-        Me.InventoryGrid.Size = New System.Drawing.Size(1137, 265)
+        Me.InventoryGrid.Size = New System.Drawing.Size(1000, 287)
         Me.InventoryGrid.TabIndex = 40
         '
         'ItemName
@@ -212,43 +212,22 @@ Partial Class Inventory
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(768, 387)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Label7.Location = New System.Drawing.Point(845, 268)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 19)
+        Me.Label7.Size = New System.Drawing.Size(60, 13)
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Category :"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 387)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(47, 268)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 19)
+        Me.Label6.Size = New System.Drawing.Size(72, 13)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Search Item :"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(35, 412)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(728, 25)
-        Me.TextBox1.TabIndex = 38
-        '
-        'Category
-        '
-        Me.Category.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Category.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Category.FormattingEnabled = True
-        Me.Category.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
-        Me.Category.Location = New System.Drawing.Point(767, 412)
-        Me.Category.Margin = New System.Windows.Forms.Padding(2)
-        Me.Category.Name = "Category"
-        Me.Category.Size = New System.Drawing.Size(188, 25)
-        Me.Category.TabIndex = 37
         '
         'Label2
         '
@@ -291,30 +270,30 @@ Partial Class Inventory
         Me.RoundedPane21.Controls.Add(Me.Label3)
         Me.RoundedPane21.CornerRadius = 20
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
-        Me.RoundedPane21.Location = New System.Drawing.Point(15, 15)
+        Me.RoundedPane21.Location = New System.Drawing.Point(14, 15)
         Me.RoundedPane21.Name = "RoundedPane21"
-        Me.RoundedPane21.Size = New System.Drawing.Size(280, 150)
+        Me.RoundedPane21.Size = New System.Drawing.Size(485, 101)
         Me.RoundedPane21.TabIndex = 35
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(18, 70)
+        Me.Label5.Location = New System.Drawing.Point(22, 60)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(50, 59)
+        Me.Label5.Size = New System.Drawing.Size(25, 30)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "8"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(23, 25)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(103, 25)
+        Me.Label3.Size = New System.Drawing.Size(78, 19)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Total Items"
         '
@@ -328,9 +307,9 @@ Partial Class Inventory
         Me.RoundedPane22.Controls.Add(Me.PictureBox8)
         Me.RoundedPane22.CornerRadius = 20
         Me.RoundedPane22.FillColor = System.Drawing.Color.White
-        Me.RoundedPane22.Location = New System.Drawing.Point(310, 15)
+        Me.RoundedPane22.Location = New System.Drawing.Point(535, 15)
         Me.RoundedPane22.Name = "RoundedPane22"
-        Me.RoundedPane22.Size = New System.Drawing.Size(310, 150)
+        Me.RoundedPane22.Size = New System.Drawing.Size(485, 101)
         Me.RoundedPane22.TabIndex = 36
         '
         'Label4
@@ -348,12 +327,12 @@ Partial Class Inventory
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Label10.Location = New System.Drawing.Point(23, 25)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(103, 25)
+        Me.Label10.Size = New System.Drawing.Size(78, 19)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Total Value"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -362,11 +341,11 @@ Partial Class Inventory
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(22, 75)
+        Me.Label11.Location = New System.Drawing.Point(33, 42)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(215, 37)
+        Me.Label11.Size = New System.Drawing.Size(164, 30)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "₱10,750,000.00"
         '
@@ -381,32 +360,72 @@ Partial Class Inventory
         Me.PictureBox8.TabIndex = 4
         Me.PictureBox8.TabStop = False
         '
-        'btnNotifications
-        '
-        Me.btnNotifications.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnNotifications.BackColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(193, Byte), Integer))
-        Me.btnNotifications.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNotifications.FlatAppearance.BorderSize = 0
-        Me.btnNotifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNotifications.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
-        Me.btnNotifications.ForeColor = System.Drawing.Color.White
-        Me.btnNotifications.Location = New System.Drawing.Point(857, 85)
-        Me.btnNotifications.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnNotifications.Name = "btnNotifications"
-        Me.btnNotifications.Size = New System.Drawing.Size(240, 55)
-        Me.btnNotifications.TabIndex = 50
-        Me.btnNotifications.Text = "🔔 View Usage History"
-        Me.btnNotifications.UseVisualStyleBackColor = False
-        '
         'pnlSummaryCards
         '
         Me.pnlSummaryCards.BackColor = System.Drawing.Color.Transparent
         Me.pnlSummaryCards.Controls.Add(Me.RoundedPane21)
         Me.pnlSummaryCards.Controls.Add(Me.RoundedPane22)
-        Me.pnlSummaryCards.Location = New System.Drawing.Point(35, 145)
+        Me.pnlSummaryCards.Location = New System.Drawing.Point(36, 127)
         Me.pnlSummaryCards.Name = "pnlSummaryCards"
-        Me.pnlSummaryCards.Size = New System.Drawing.Size(920, 180)
+        Me.pnlSummaryCards.Size = New System.Drawing.Size(1023, 123)
         Me.pnlSummaryCards.TabIndex = 51
+        '
+        'btnNotifications
+        '
+        Me.btnNotifications.BackColor = System.Drawing.Color.Transparent
+        Me.btnNotifications.BorderColor = System.Drawing.Color.Transparent
+        Me.btnNotifications.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNotifications.EnteredBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnNotifications.EnteredColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnNotifications.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.btnNotifications.Image = Nothing
+        Me.btnNotifications.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNotifications.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(193, Byte), Integer))
+        Me.btnNotifications.Location = New System.Drawing.Point(828, 81)
+        Me.btnNotifications.Name = "btnNotifications"
+        Me.btnNotifications.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnNotifications.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.btnNotifications.Size = New System.Drawing.Size(231, 40)
+        Me.btnNotifications.TabIndex = 52
+        Me.btnNotifications.Text = "View Usage History"
+        Me.btnNotifications.TextAlignment = System.Drawing.StringAlignment.Center
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.Transparent
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBox1.Image = Nothing
+        Me.TextBox1.Location = New System.Drawing.Point(50, 284)
+        Me.TextBox1.MaxLength = 32767
+        Me.TextBox1.Multiline = False
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = False
+        Me.TextBox1.Size = New System.Drawing.Size(485, 38)
+        Me.TextBox1.TabIndex = 53
+        Me.TextBox1.Text = "Search..."
+        Me.TextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TextBox1.UseSystemPasswordChar = False
+        '
+        'Category
+        '
+        Me.Category.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.Category.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Category.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Category.DropDownHeight = 100
+        Me.Category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Category.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Category.ForeColor = System.Drawing.Color.White
+        Me.Category.FormattingEnabled = True
+        Me.Category.HoverSelectionColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Category.IntegralHeight = False
+        Me.Category.ItemHeight = 26
+        Me.Category.Items.AddRange(New Object() {"Meat & Poultry", "Vegetables", "Dairy", "Dry Goods", "Oils & Condiments", "Herbs & Spices", "Beverages", "Seafood"})
+        Me.Category.Location = New System.Drawing.Point(848, 290)
+        Me.Category.Name = "Category"
+        Me.Category.Size = New System.Drawing.Size(202, 32)
+        Me.Category.StartIndex = 0
+        Me.Category.TabIndex = 54
         '
         'Inventory
         '
@@ -414,13 +433,13 @@ Partial Class Inventory
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.GhostWhite
         Me.ClientSize = New System.Drawing.Size(1113, 712)
-        Me.Controls.Add(Me.pnlSummaryCards)
+        Me.Controls.Add(Me.Category)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnNotifications)
+        Me.Controls.Add(Me.pnlSummaryCards)
         Me.Controls.Add(Me.InventoryGrid)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Category)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Splitter1)
@@ -451,8 +470,6 @@ Partial Class Inventory
     Friend WithEvents InventoryGrid As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Category As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Splitter1 As Splitter
@@ -467,7 +484,8 @@ Partial Class Inventory
     Friend WithEvents Type As DataGridViewTextBoxColumn
     Friend WithEvents ExpirationDate As DataGridViewTextBoxColumn
     Friend WithEvents Actions As DataGridViewButtonColumn
-    Friend WithEvents btnNotifications As Button
     Friend WithEvents pnlSummaryCards As Panel
-
+    Friend WithEvents btnNotifications As ReaLTaiizor.Controls.Button
+    Friend WithEvents TextBox1 As ReaLTaiizor.Controls.BigTextBox
+    Friend WithEvents Category As ReaLTaiizor.Controls.ComboBoxEdit
 End Class

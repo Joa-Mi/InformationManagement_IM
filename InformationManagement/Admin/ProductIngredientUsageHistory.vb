@@ -111,9 +111,9 @@ Public Class ProductIngredientUsageHistory
             With dgvUsageHistory
                 .AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
                 .RowTemplate.Height = 35
-                .DefaultCellStyle.Font = New Font("Segoe UI", 9)
+                .DefaultCellStyle.Font = New Font("Segoe UI", 8.25)
                 .DefaultCellStyle.Padding = New Padding(8, 4, 8, 4)
-                .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI", 9, FontStyle.Bold)
+                .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI SemiBold", 9)
                 .AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 250, 250)
                 .ReadOnly = True
                 .AllowUserToAddRows = False
@@ -179,11 +179,11 @@ Public Class ProductIngredientUsageHistory
         End Try
     End Sub
 
-    Private Sub btnApplyFilters_Click(sender As Object, e As EventArgs)
+    Private Sub btnApplyFilters_Click(sender As Object, e As EventArgs) Handles btnApplyFilters.Click
         LoadUsageHistory()
     End Sub
 
-    Private Sub btnResetFilters_Click(sender As Object, e As EventArgs)
+    Private Sub btnResetFilters_Click(sender As Object, e As EventArgs) Handles btnResetFilters.Click
         dtpStartDate.Value = Date.Now.AddDays(-7)
         dtpEndDate.Value = Date.Now
         cmbSource.SelectedIndex = 0
@@ -191,11 +191,11 @@ Public Class ProductIngredientUsageHistory
         LoadUsageHistory()
     End Sub
 
-    Private Sub btnRefresh_Click(sender As Object, e As EventArgs)
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         LoadUsageHistory()
     End Sub
 
-    Private Sub btnClearHistory_Click(sender As Object, e As EventArgs)
+    Private Sub btnClearHistory_Click(sender As Object, e As EventArgs) Handles btnClearHistory.Click
         Try
             Dim result As DialogResult = MessageBox.Show(
                 "Are you sure you want to clear the ingredient usage history?" & vbCrLf & vbCrLf &
@@ -250,7 +250,7 @@ Public Class ProductIngredientUsageHistory
         End Try
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
 

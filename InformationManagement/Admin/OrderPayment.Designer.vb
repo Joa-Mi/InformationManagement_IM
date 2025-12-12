@@ -53,7 +53,7 @@ Partial Class OrderPayment
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold)
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(41, 14)
+        Me.lblTitle.Location = New System.Drawing.Point(41, 20)
         Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(226, 40)
@@ -109,7 +109,7 @@ Partial Class OrderPayment
         Me.btnRefresh.Image = Nothing
         Me.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRefresh.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.btnRefresh.Location = New System.Drawing.Point(768, 15)
+        Me.btnRefresh.Location = New System.Drawing.Point(768, 13)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnRefresh.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
@@ -163,7 +163,7 @@ Partial Class OrderPayment
         Me.lblSearch.AutoSize = True
         Me.lblSearch.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblSearch.Location = New System.Drawing.Point(34, 23)
+        Me.lblSearch.Location = New System.Drawing.Point(50, 23)
         Me.lblSearch.Name = "lblSearch"
         Me.lblSearch.Size = New System.Drawing.Size(46, 15)
         Me.lblSearch.TabIndex = 0

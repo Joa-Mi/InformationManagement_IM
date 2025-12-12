@@ -30,6 +30,7 @@ Public Class Feedback
             If DataGridView1 Is Nothing Then Return
 
             With DataGridView1
+                .EnableHeadersVisualStyles = False
                 .AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
                 .SelectionMode = DataGridViewSelectionMode.FullRowSelect
                 .ReadOnly = True

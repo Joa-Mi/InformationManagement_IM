@@ -146,7 +146,7 @@ Public Class Reports
     End Sub
 
     Private Sub ComboBox_DrawItem(sender As Object, e As DrawItemEventArgs) _
-       Handles reportPeriod.DrawItem
+       
 
         If e.Index < 0 Then Return
         Dim cmb As ComboBox = DirectCast(sender, ComboBox)
@@ -157,7 +157,7 @@ Public Class Reports
 
 
     ' === PERIOD SELECTION CHANGED ===
-    Private Sub reportPeriod_SelectedIndexChanged(sender As Object, e As EventArgs) Handles reportPeriod.SelectedIndexChanged
+    Private Sub reportPeriod_SelectedIndexChanged(sender As Object, e As EventArgs) 
         ' Update the shared property
         SelectedPeriod = reportPeriod.SelectedItem.ToString()
 

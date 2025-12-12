@@ -10,7 +10,7 @@ Public Class Reservations
     ' ==========================================
     ' UPDATE STATUS BUTTON (Form Button)
     ' ==========================================
-    Private Sub btnUpdateStatus_Click(sender As Object, e As EventArgs) Handles btnUpdateStatus.Click
+    Private Sub btnUpdateStatus_Click(sender As Object, e As EventArgs)
         Try
             ' Check if a row is selected
             If Reservation.SelectedRows.Count = 0 Then

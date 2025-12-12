@@ -200,9 +200,9 @@ Public Class ReservationPayment
 
         ' Other formatting
         Reservation.RowHeadersVisible = False
-        Reservation.DefaultCellStyle.Font = New Font("Segoe UI", 8.5)
+        Reservation.DefaultCellStyle.Font = New Font("Segoe UI", 8.25)
         Reservation.ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI Semibold", 9)
-        Reservation.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(40, 60, 85)
+        Reservation.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(26, 38, 50)
         Reservation.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
         Reservation.EnableHeadersVisualStyles = False
     End Sub

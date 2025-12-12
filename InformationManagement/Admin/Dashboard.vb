@@ -53,7 +53,7 @@ Public Class Dashboard
     ' ============================================
     ' FILTERS COMBO BOX EVENT HANDLER
     ' ============================================
-    Private Sub Filters_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Filters.SelectedIndexChanged
+    Private Sub Filters_SelectedIndexChanged(sender As Object, e As EventArgs) 
         Try
             ' Reload dashboard data based on selected filter
             LoadDashboardData()

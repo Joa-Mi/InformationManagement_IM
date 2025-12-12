@@ -6,10 +6,6 @@ Public Class Inventory
         Try
             ' Set form to maximized
             Me.WindowState = FormWindowState.Maximized
-
-            ' Apply responsive layout
-            ApplyResponsiveLayout()
-
             ' Load categories dropdown
             LoadCategories()
 
@@ -55,84 +51,9 @@ Public Class Inventory
         End Try
     End Sub
 
-    ' Handle form resize
-    Private Sub Inventory_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
-        ApplyResponsiveLayout()
-    End Sub
 
     ' Apply responsive layout based on screen size
-    Private Sub ApplyResponsiveLayout()
-        Try
-            Dim formWidth As Integer = Me.ClientSize.Width
-            Dim formHeight As Integer = Me.ClientSize.Height
 
-            ' Calculate margins and spacing
-            Dim leftMargin As Integer = CInt(formWidth * 0.03) ' 3% margin
-            Dim topMargin As Integer = 120
-            Dim spacing As Integer = CInt(formWidth * 0.015) ' 1.5% spacing
-
-            ' Position and size for header section
-            If Me.Controls.Contains(Splitter1) Then
-                Splitter1.Height = 105
-            End If
-
-            ' Position summary cards
-            Dim cardWidth As Integer = CInt((formWidth - (leftMargin * 2) - spacing) / 2)
-            Dim cardHeight As Integer = 170
-
-            ' Total Items card
-            If Me.Controls.Contains(RoundedPane21) Then
-                RoundedPane21.Location = New Point(leftMargin, topMargin)
-                RoundedPane21.Size = New Size(cardWidth, cardHeight)
-            End If
-
-            ' Total Value card
-            If Me.Controls.Contains(RoundedPane22) Then
-                RoundedPane22.Location = New Point(leftMargin + cardWidth + spacing, topMargin)
-                RoundedPane22.Size = New Size(cardWidth, cardHeight)
-            End If
-
-            ' Search and filter section
-            Dim searchTop As Integer = topMargin + cardHeight + 40
-
-            ' Search label
-            If Me.Controls.Contains(Label6) Then
-                Label6.Location = New Point(leftMargin, searchTop)
-            End If
-
-            ' Search textbox - takes 60% width
-            Dim searchWidth As Integer = CInt((formWidth - (leftMargin * 2) - spacing) * 0.6)
-            If Me.Controls.Contains(TextBox1) Then
-                TextBox1.Location = New Point(leftMargin, searchTop + 25)
-                TextBox1.Size = New Size(searchWidth, 22)
-            End If
-
-            ' Category label
-            If Me.Controls.Contains(Label7) Then
-                Label7.Location = New Point(leftMargin + searchWidth + spacing, searchTop)
-            End If
-
-            ' Category dropdown
-            Dim categoryWidth As Integer = formWidth - (leftMargin * 2) - searchWidth - spacing
-            If Me.Controls.Contains(Category) Then
-                Category.Location = New Point(leftMargin + searchWidth + spacing, searchTop + 25)
-                Category.Size = New Size(categoryWidth, 24)
-            End If
-
-            ' DataGrid
-            Dim gridTop As Integer = searchTop + 60
-            Dim gridHeight As Integer = formHeight - gridTop - 30
-
-            InventoryGrid.Location = New Point(leftMargin, gridTop)
-            InventoryGrid.Size = New Size(formWidth - (leftMargin * 2), gridHeight)
-
-            ' Adjust DataGrid columns
-            AdjustGridColumns()
-
-        Catch ex As Exception
-            ' Silent fail during resize
-        End Try
-    End Sub
 
     ' Adjust DataGrid column widths
     Private Sub AdjustGridColumns()
@@ -270,9 +191,6 @@ Public Class Inventory
             With InventoryGrid
                 .AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
                 .RowTemplate.Height = 35
-                .DefaultCellStyle.Font = New Font("Segoe UI", 9)
-                .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI", 10, FontStyle.Bold)
-                .AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 250, 250)
                 .ReadOnly = False
                 .AllowUserToAddRows = False
                 .AllowUserToDeleteRows = False

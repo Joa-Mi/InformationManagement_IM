@@ -60,7 +60,6 @@ Partial Class Dashboard
         Me.revenuePercentage = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Filters = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblTotalOrders = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
@@ -116,6 +115,7 @@ Partial Class Dashboard
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.RoundedPane26 = New InformationManagement.RoundedPane2()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Filters = New ReaLTaiizor.Controls.HopeComboBox()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.arrowincrease, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,23 +224,6 @@ Partial Class Dashboard
         Me.Label6.Text = "Active Products"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Filters
-        '
-        Me.Filters.BackColor = System.Drawing.Color.Transparent
-        Me.Filters.BorderRadius = 6
-        Me.Filters.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Filters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Filters.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Filters.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Filters.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Filters.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Filters.ItemHeight = 30
-        Me.Filters.Items.AddRange(New Object() {"Daily", "Weekly", "Monthly", "Yearly"})
-        Me.Filters.Location = New System.Drawing.Point(929, 43)
-        Me.Filters.Name = "Filters"
-        Me.Filters.Size = New System.Drawing.Size(140, 36)
-        Me.Filters.TabIndex = 1
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -277,10 +260,9 @@ Partial Class Dashboard
         '
         'RoundedPane223
         '
+        Me.RoundedPane223.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane223.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane223.BorderThickness = 1
         Me.RoundedPane223.Controls.Add(Me.ChartTopProducts)
-        Me.RoundedPane223.CornerRadius = 15
         Me.RoundedPane223.FillColor = System.Drawing.Color.White
         Me.RoundedPane223.Location = New System.Drawing.Point(35, 738)
         Me.RoundedPane223.Name = "RoundedPane223"
@@ -322,10 +304,9 @@ Partial Class Dashboard
         '
         'RoundedPane219
         '
+        Me.RoundedPane219.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane219.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane219.BorderThickness = 1
         Me.RoundedPane219.Controls.Add(Me.OrdersOverviewChart)
-        Me.RoundedPane219.CornerRadius = 15
         Me.RoundedPane219.FillColor = System.Drawing.Color.White
         Me.RoundedPane219.Location = New System.Drawing.Point(492, 282)
         Me.RoundedPane219.Name = "RoundedPane219"
@@ -373,8 +354,8 @@ Partial Class Dashboard
         'RoundedPane24
         '
         Me.RoundedPane24.AutoSize = True
+        Me.RoundedPane24.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane24.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane24.BorderThickness = 1
         Me.RoundedPane24.Controls.Add(Me.RoundedPane222)
         Me.RoundedPane24.Controls.Add(Me.Label9)
         Me.RoundedPane24.Controls.Add(Me.lblActiveReservations)
@@ -389,7 +370,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane222.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane222.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane222.BorderThickness = 1
         Me.RoundedPane222.Controls.Add(Me.PictureBox12)
         Me.RoundedPane222.CornerRadius = 8
         Me.RoundedPane222.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -436,8 +416,8 @@ Partial Class Dashboard
         'RoundedPane215
         '
         Me.RoundedPane215.AutoSize = True
+        Me.RoundedPane215.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane215.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane215.BorderThickness = 1
         Me.RoundedPane215.Controls.Add(Me.RoundedPane221)
         Me.RoundedPane215.Controls.Add(Me.Label17)
         Me.RoundedPane215.Controls.Add(Me.lblTotalRevenue)
@@ -452,7 +432,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane221.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane221.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane221.BorderThickness = 1
         Me.RoundedPane221.Controls.Add(Me.PictureBox11)
         Me.RoundedPane221.CornerRadius = 8
         Me.RoundedPane221.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -499,8 +478,8 @@ Partial Class Dashboard
         'RoundedPane21
         '
         Me.RoundedPane21.AutoSize = True
+        Me.RoundedPane21.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane21.BorderThickness = 1
         Me.RoundedPane21.Controls.Add(Me.RoundedPane23)
         Me.RoundedPane21.Controls.Add(Me.Label10)
         Me.RoundedPane21.Controls.Add(Me.lblTotalOrder)
@@ -515,7 +494,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane23.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane23.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane23.BorderThickness = 1
         Me.RoundedPane23.Controls.Add(Me.PictureBox10)
         Me.RoundedPane23.CornerRadius = 8
         Me.RoundedPane23.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -562,8 +540,8 @@ Partial Class Dashboard
         'RoundedPane217
         '
         Me.RoundedPane217.AutoSize = True
+        Me.RoundedPane217.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane217.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane217.BorderThickness = 1
         Me.RoundedPane217.Controls.Add(Me.RoundedPane218)
         Me.RoundedPane217.Controls.Add(Me.Label8)
         Me.RoundedPane217.Controls.Add(Me.lblAverageOrder)
@@ -578,7 +556,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane218.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane218.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane218.BorderThickness = 1
         Me.RoundedPane218.Controls.Add(Me.PictureBox5)
         Me.RoundedPane218.CornerRadius = 8
         Me.RoundedPane218.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -624,11 +601,10 @@ Partial Class Dashboard
         '
         'RoundedPane25
         '
+        Me.RoundedPane25.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane25.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane25.BorderThickness = 1
         Me.RoundedPane25.Controls.Add(Me.Label11)
         Me.RoundedPane25.Controls.Add(Me.ChartReservations)
-        Me.RoundedPane25.CornerRadius = 15
         Me.RoundedPane25.FillColor = System.Drawing.Color.White
         Me.RoundedPane25.Location = New System.Drawing.Point(617, 735)
         Me.RoundedPane25.Name = "RoundedPane25"
@@ -683,11 +659,10 @@ Partial Class Dashboard
         'RoundedPane28
         '
         Me.RoundedPane28.AutoSize = True
+        Me.RoundedPane28.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane28.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane28.BorderThickness = 1
         Me.RoundedPane28.Controls.Add(Me.FlowLegends)
         Me.RoundedPane28.Controls.Add(Me.Chart2)
-        Me.RoundedPane28.CornerRadius = 15
         Me.RoundedPane28.FillColor = System.Drawing.Color.White
         Me.RoundedPane28.Location = New System.Drawing.Point(35, 282)
         Me.RoundedPane28.Name = "RoundedPane28"
@@ -711,13 +686,12 @@ Partial Class Dashboard
         '
         'RoundedPane29
         '
+        Me.RoundedPane29.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane29.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane29.BorderThickness = 1
         Me.RoundedPane29.Controls.Add(Me.lblValueDinein)
         Me.RoundedPane29.Controls.Add(Me.lblPercentDineIn)
         Me.RoundedPane29.Controls.Add(Me.Label3)
         Me.RoundedPane29.Controls.Add(Me.Panel1)
-        Me.RoundedPane29.CornerRadius = 15
         Me.RoundedPane29.FillColor = System.Drawing.Color.White
         Me.RoundedPane29.Location = New System.Drawing.Point(13, 13)
         Me.RoundedPane29.Name = "RoundedPane29"
@@ -768,13 +742,12 @@ Partial Class Dashboard
         '
         'RoundedPane210
         '
+        Me.RoundedPane210.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane210.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane210.BorderThickness = 1
         Me.RoundedPane210.Controls.Add(Me.lblValueTakeout)
         Me.RoundedPane210.Controls.Add(Me.lblPercentTakeout)
         Me.RoundedPane210.Controls.Add(Me.Label4)
         Me.RoundedPane210.Controls.Add(Me.Panel2)
-        Me.RoundedPane210.CornerRadius = 15
         Me.RoundedPane210.FillColor = System.Drawing.Color.White
         Me.RoundedPane210.Location = New System.Drawing.Point(13, 67)
         Me.RoundedPane210.Name = "RoundedPane210"
@@ -825,13 +798,12 @@ Partial Class Dashboard
         '
         'RoundedPane211
         '
+        Me.RoundedPane211.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane211.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane211.BorderThickness = 1
         Me.RoundedPane211.Controls.Add(Me.lblValueCatering)
         Me.RoundedPane211.Controls.Add(Me.lblPercentCatering)
         Me.RoundedPane211.Controls.Add(Me.Label12)
         Me.RoundedPane211.Controls.Add(Me.Panel3)
-        Me.RoundedPane211.CornerRadius = 15
         Me.RoundedPane211.FillColor = System.Drawing.Color.White
         Me.RoundedPane211.Location = New System.Drawing.Point(13, 121)
         Me.RoundedPane211.Name = "RoundedPane211"
@@ -939,9 +911,8 @@ Partial Class Dashboard
         '
         'RoundedPane213
         '
+        Me.RoundedPane213.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane213.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane213.BorderThickness = 1
-        Me.RoundedPane213.CornerRadius = 15
         Me.RoundedPane213.FillColor = System.Drawing.Color.White
         Me.RoundedPane213.Location = New System.Drawing.Point(0, 0)
         Me.RoundedPane213.Name = "RoundedPane213"
@@ -952,7 +923,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane212.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane212.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane212.BorderThickness = 1
         Me.RoundedPane212.Controls.Add(Me.PictureBox4)
         Me.RoundedPane212.CornerRadius = 8
         Me.RoundedPane212.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -975,7 +945,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane216.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane216.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane216.BorderThickness = 1
         Me.RoundedPane216.Controls.Add(Me.PictureBox3)
         Me.RoundedPane216.CornerRadius = 8
         Me.RoundedPane216.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -998,7 +967,6 @@ Partial Class Dashboard
         '
         Me.RoundedPane26.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane26.BorderColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.RoundedPane26.BorderThickness = 1
         Me.RoundedPane26.Controls.Add(Me.PictureBox8)
         Me.RoundedPane26.CornerRadius = 8
         Me.RoundedPane26.FillColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -1017,6 +985,20 @@ Partial Class Dashboard
         Me.PictureBox8.TabIndex = 4
         Me.PictureBox8.TabStop = False
         '
+        'Filters
+        '
+        Me.Filters.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Filters.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Filters.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Filters.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Filters.FormattingEnabled = True
+        Me.Filters.ItemHeight = 30
+        Me.Filters.Items.AddRange(New Object() {"Daily", "Weekly", "Monthly", "Yearly"})
+        Me.Filters.Location = New System.Drawing.Point(941, 43)
+        Me.Filters.Name = "Filters"
+        Me.Filters.Size = New System.Drawing.Size(121, 36)
+        Me.Filters.TabIndex = 42
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1024,21 +1006,20 @@ Partial Class Dashboard
         Me.AutoScroll = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.GhostWhite
-        Me.ClientSize = New System.Drawing.Size(1267, 749)
+        Me.ClientSize = New System.Drawing.Size(1113, 749)
+        Me.Controls.Add(Me.Filters)
         Me.Controls.Add(Me.RoundedPane223)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.RoundedPane219)
         Me.Controls.Add(Me.RoundedPane24)
         Me.Controls.Add(Me.RoundedPane215)
         Me.Controls.Add(Me.RoundedPane21)
-        Me.Controls.Add(Me.Filters)
         Me.Controls.Add(Me.RoundedPane217)
         Me.Controls.Add(Me.RoundedPane25)
         Me.Controls.Add(Me.RoundedPane28)
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Name = "Dashboard"
-        Me.Text = "Dashboard"
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.arrowincrease, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1125,7 +1106,6 @@ Partial Class Dashboard
     Friend WithEvents revenuePercentage As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents arrowincrease As PictureBox
-    Friend WithEvents Filters As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents RoundedPane26 As RoundedPane2
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label5 As Label
@@ -1151,4 +1131,5 @@ Partial Class Dashboard
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents RoundedPane223 As RoundedPane2
     Friend WithEvents ChartTopProducts As DataVisualization.Charting.Chart
+    Friend WithEvents Filters As ReaLTaiizor.Controls.HopeComboBox
 End Class

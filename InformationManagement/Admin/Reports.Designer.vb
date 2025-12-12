@@ -35,7 +35,7 @@ Partial Class Reports
         Me.btnCustomerHistory = New System.Windows.Forms.Button()
         Me.btnEmployeeAttendance = New System.Windows.Forms.Button()
         Me.btnProductsPerformance = New System.Windows.Forms.Button()
-        Me.reportPeriod = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.reportPeriod = New ReaLTaiizor.Controls.HopeComboBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +44,7 @@ Partial Class Reports
         Me.Label1.AutoSize = True
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(30, 20)
+        Me.Label1.Location = New System.Drawing.Point(27, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(324, 40)
         Me.Label1.TabIndex = 2
@@ -56,9 +56,9 @@ Partial Class Reports
         Me.Panel1.AutoSize = True
         Me.Panel1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Panel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel1.Location = New System.Drawing.Point(-4, 166)
+        Me.Panel1.Location = New System.Drawing.Point(7, 134)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(951, 639)
+        Me.Panel1.Size = New System.Drawing.Size(1103, 539)
         Me.Panel1.TabIndex = 3
         '
         'FlowLayoutPanel1
@@ -83,7 +83,7 @@ Partial Class Reports
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(2)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1555, 73)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1623, 73)
         Me.FlowLayoutPanel1.TabIndex = 4
         Me.FlowLayoutPanel1.WrapContents = False
         '
@@ -269,21 +269,17 @@ Partial Class Reports
         '
         'reportPeriod
         '
-        Me.reportPeriod.BackColor = System.Drawing.Color.Transparent
-        Me.reportPeriod.BorderRadius = 6
+        Me.reportPeriod.Cursor = System.Windows.Forms.Cursors.Hand
         Me.reportPeriod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.reportPeriod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.reportPeriod.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.reportPeriod.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.reportPeriod.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.reportPeriod.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.reportPeriod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.reportPeriod.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.reportPeriod.FormattingEnabled = True
         Me.reportPeriod.ItemHeight = 30
         Me.reportPeriod.Items.AddRange(New Object() {"Daily", "Weekly", "Montly", "Yearly"})
-        Me.reportPeriod.Location = New System.Drawing.Point(686, 13)
-        Me.reportPeriod.Margin = New System.Windows.Forms.Padding(2)
+        Me.reportPeriod.Location = New System.Drawing.Point(949, 12)
         Me.reportPeriod.Name = "reportPeriod"
-        Me.reportPeriod.Size = New System.Drawing.Size(92, 36)
-        Me.reportPeriod.TabIndex = 6
+        Me.reportPeriod.Size = New System.Drawing.Size(121, 36)
+        Me.reportPeriod.TabIndex = 0
         '
         'Reports
         '
@@ -292,7 +288,7 @@ Partial Class Reports
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.GhostWhite
-        Me.ClientSize = New System.Drawing.Size(1045, 495)
+        Me.ClientSize = New System.Drawing.Size(1113, 712)
         Me.Controls.Add(Me.reportPeriod)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Panel1)
@@ -322,5 +318,5 @@ Partial Class Reports
     Friend WithEvents btnCustomerHistory As Button
     Friend WithEvents btnEmployeeAttendance As Button
     Friend WithEvents btnProductsPerformance As Button
-    Friend WithEvents reportPeriod As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents reportPeriod As ReaLTaiizor.Controls.HopeComboBox
 End Class
