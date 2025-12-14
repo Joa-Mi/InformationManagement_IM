@@ -77,11 +77,9 @@ Partial Class FormSales
         '
         Me.RoundedPane24.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane24.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane24.BorderThickness = 1
         Me.RoundedPane24.Controls.Add(Me.Button1)
         Me.RoundedPane24.Controls.Add(Me.Label1)
         Me.RoundedPane24.Controls.Add(Me.Chart1)
-        Me.RoundedPane24.CornerRadius = 15
         Me.RoundedPane24.FillColor = System.Drawing.Color.White
         Me.RoundedPane24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.RoundedPane24.Location = New System.Drawing.Point(35, 194)
@@ -174,12 +172,11 @@ Partial Class FormSales
         '
         'RoundedPane23
         '
+        Me.RoundedPane23.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane23.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane23.BorderThickness = 1
         Me.RoundedPane23.Controls.Add(Me.Label13)
         Me.RoundedPane23.Controls.Add(Me.Label14)
         Me.RoundedPane23.Controls.Add(Me.PictureBox10)
-        Me.RoundedPane23.CornerRadius = 15
         Me.RoundedPane23.FillColor = System.Drawing.Color.White
         Me.RoundedPane23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.RoundedPane23.Location = New System.Drawing.Point(745, 27)
@@ -223,12 +220,11 @@ Partial Class FormSales
         '
         'RoundedPane21
         '
+        Me.RoundedPane21.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane21.BorderThickness = 1
         Me.RoundedPane21.Controls.Add(Me.Label2)
         Me.RoundedPane21.Controls.Add(Me.lblTotalRevenue)
         Me.RoundedPane21.Controls.Add(Me.PictureBox4)
-        Me.RoundedPane21.CornerRadius = 15
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
         Me.RoundedPane21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.RoundedPane21.Location = New System.Drawing.Point(35, 27)
@@ -317,12 +313,11 @@ Partial Class FormSales
         '
         'RoundedPane22
         '
+        Me.RoundedPane22.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane22.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane22.BorderThickness = 1
         Me.RoundedPane22.Controls.Add(Me.Label10)
         Me.RoundedPane22.Controls.Add(Me.Label11)
         Me.RoundedPane22.Controls.Add(Me.PictureBox8)
-        Me.RoundedPane22.CornerRadius = 15
         Me.RoundedPane22.FillColor = System.Drawing.Color.White
         Me.RoundedPane22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.RoundedPane22.Location = New System.Drawing.Point(390, 27)

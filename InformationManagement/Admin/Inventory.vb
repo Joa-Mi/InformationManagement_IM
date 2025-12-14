@@ -12,7 +12,6 @@ Public Class Inventory
             ' Load data
             LoadInventorySummary()
             LoadInventoryStatistics()
-            UpdateNotificationButton()
 
         Catch ex As Exception
             MessageBox.Show("Error loading form: " & ex.Message,
@@ -627,21 +626,7 @@ Public Class Inventory
         End Try
     End Function
 
-    Private Sub UpdateNotificationButton()
-        Try
-            Dim count As Integer = GetRecentDeductionCount()
 
-            If count > 0 Then
-                btnNotifications.Text = "🔔 Usage History (" & count & ")"
-                btnNotifications.BackColor = Color.FromArgb(220, 53, 69) ' Red alert
-            Else
-                btnNotifications.Text = "🔔 View Usage History"
-                btnNotifications.BackColor = Color.FromArgb(111, 66, 193) ' Purple default
-            End If
-        Catch ex As Exception
-            ' Silent fail
-        End Try
-    End Sub
 
     ' Public refresh method
     Public Sub RefreshInventory()

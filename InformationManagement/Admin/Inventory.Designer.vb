@@ -415,7 +415,7 @@ Partial Class Inventory
         Me.Category.DropDownHeight = 100
         Me.Category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Category.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Category.ForeColor = System.Drawing.Color.White
+        Me.Category.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Category.FormattingEnabled = True
         Me.Category.HoverSelectionColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Category.IntegralHeight = False

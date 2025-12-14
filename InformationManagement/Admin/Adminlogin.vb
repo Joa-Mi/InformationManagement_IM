@@ -1,8 +1,6 @@
-﻿
-Imports MySqlConnector   ' ✔ Correct library for your modDB module
+﻿Imports MySqlConnector   ' ✔ Correct library for your modDB module
 
 Public Class Adminlogin
-
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         ' Optional
     End Sub
@@ -17,10 +15,19 @@ Public Class Adminlogin
     End Sub
 
     Private Sub Adminlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Load configuration first
+        If Not DatabaseConfig.LoadConfig() Then
+            MessageBox.Show("Database configuration not found. Please restart the application to configure.",
+                          "Configuration Error",
+                          MessageBoxButtons.OK,
+                          MessageBoxIcon.Error)
+            Application.Exit()
+            Exit Sub
+        End If
+
         ' Initialize database tables
         CheckAndCreateTables()
     End Sub
-
 
     ' 🔐 ADMIN LOGIN BUTTON
     Private Sub adminlog_Click(sender As Object, e As EventArgs) Handles adminlog.Click
@@ -49,7 +56,7 @@ Public Class Adminlogin
         Dim query As String = "SELECT * FROM user_accounts WHERE username=@user AND password=@pass LIMIT 1"
 
         Try
-            openConn()
+            openConn() ' This should now use the config settings
 
             cmd = New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@user", user)
@@ -79,15 +86,21 @@ Public Class Adminlogin
                                 "Login Failed",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error)
+                reader.Close()
+                conn.Close()
             End If
 
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show("Login Error: " & ex.Message,
+                          "Error",
+                          MessageBoxButtons.OK,
+                          MessageBoxIcon.Error)
+            If conn IsNot Nothing AndAlso conn.State = ConnectionState.Open Then
+                conn.Close()
+            End If
         End Try
-
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
     End Sub
 End Class

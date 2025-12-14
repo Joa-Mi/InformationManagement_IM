@@ -10,19 +10,6 @@ Public Class AdminDashboard
         Me.UpdateStyles()
     End Sub
 
-
-    Private Sub MakeRoundedButton(btn As Button, radius As Integer)
-        Dim path As New Drawing2D.GraphicsPath()
-        Dim rect As New Rectangle(0, 0, btn.Width, btn.Height)
-
-        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90)
-        path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90)
-        path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90)
-        path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90)
-        path.CloseAllFigures()
-
-        btn.Region = New Region(path)
-    End Sub
     Private currentButton As Button = Nothing
 
     Private Sub HighlightButton(clickedButton As Button)
@@ -252,14 +239,7 @@ Public Class AdminDashboard
 
     Private Sub AdminDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-        MakeRoundedButton(btnDashboard, 15)
-        MakeRoundedButton(btnMenuItems, 15)
-        MakeRoundedButton(btnUserAccounts, 15)
-        MakeRoundedButton(btnReservations, 15)
-        MakeRoundedButton(btnOrders, 15)
-        MakeRoundedButton(btnPayroll, 15)
-        MakeRoundedButton(btnReports, 15)
-        HighlightButton(btnDashboard)
+
         With Dashboard
             .TopLevel = False
             .FormBorderStyle = FormBorderStyle.None
@@ -277,5 +257,7 @@ Public Class AdminDashboard
         Application.Exit()
     End Sub
 
+    Private Sub btnDashboard_MouseEnter(sender As Object, e As EventArgs) Handles btnDashboard.MouseEnter
 
+    End Sub
 End Class

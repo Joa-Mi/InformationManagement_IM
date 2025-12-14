@@ -59,7 +59,7 @@
         Me.pnlMain.Location = New System.Drawing.Point(0, 0)
         Me.pnlMain.Name = "pnlMain"
         Me.pnlMain.Padding = New System.Windows.Forms.Padding(15)
-        Me.pnlMain.Size = New System.Drawing.Size(1084, 661)
+        Me.pnlMain.Size = New System.Drawing.Size(884, 561)
         Me.pnlMain.TabIndex = 0
         '
         'pnlGrid
@@ -70,7 +70,7 @@
         Me.pnlGrid.Location = New System.Drawing.Point(15, 175)
         Me.pnlGrid.Name = "pnlGrid"
         Me.pnlGrid.Padding = New System.Windows.Forms.Padding(10)
-        Me.pnlGrid.Size = New System.Drawing.Size(1054, 423)
+        Me.pnlGrid.Size = New System.Drawing.Size(854, 327)
         Me.pnlGrid.TabIndex = 0
         '
         'dgvUsageHistory
@@ -103,13 +103,13 @@
         Me.dgvUsageHistory.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgvUsageHistory.EnableHeadersVisualStyles = False
         Me.dgvUsageHistory.GridColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.dgvUsageHistory.Location = New System.Drawing.Point(30, 0)
+        Me.dgvUsageHistory.Location = New System.Drawing.Point(30, 7)
         Me.dgvUsageHistory.Name = "dgvUsageHistory"
         Me.dgvUsageHistory.ReadOnly = True
         Me.dgvUsageHistory.RowHeadersVisible = False
         Me.dgvUsageHistory.RowTemplate.Height = 35
         Me.dgvUsageHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvUsageHistory.Size = New System.Drawing.Size(991, 403)
+        Me.dgvUsageHistory.Size = New System.Drawing.Size(791, 307)
         Me.dgvUsageHistory.TabIndex = 0
         '
         'pnlFilters
@@ -130,13 +130,13 @@
         Me.pnlFilters.Location = New System.Drawing.Point(15, 70)
         Me.pnlFilters.Name = "pnlFilters"
         Me.pnlFilters.Padding = New System.Windows.Forms.Padding(10)
-        Me.pnlFilters.Size = New System.Drawing.Size(1054, 105)
+        Me.pnlFilters.Size = New System.Drawing.Size(854, 105)
         Me.pnlFilters.TabIndex = 1
         '
         'lblSource
         '
         Me.lblSource.AutoSize = True
-        Me.lblSource.Location = New System.Drawing.Point(467, 40)
+        Me.lblSource.Location = New System.Drawing.Point(370, 41)
         Me.lblSource.Name = "lblSource"
         Me.lblSource.Size = New System.Drawing.Size(45, 13)
         Me.lblSource.TabIndex = 4
@@ -145,7 +145,7 @@
         'lblSearch
         '
         Me.lblSearch.AutoSize = True
-        Me.lblSearch.Location = New System.Drawing.Point(687, 36)
+        Me.lblSearch.Location = New System.Drawing.Point(543, 36)
         Me.lblSearch.Name = "lblSearch"
         Me.lblSearch.Size = New System.Drawing.Size(101, 13)
         Me.lblSearch.TabIndex = 6
@@ -157,12 +157,12 @@
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtSearch.Image = Nothing
-        Me.txtSearch.Location = New System.Drawing.Point(690, 52)
+        Me.txtSearch.Location = New System.Drawing.Point(545, 52)
         Me.txtSearch.MaxLength = 32767
         Me.txtSearch.Multiline = False
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.ReadOnly = False
-        Me.txtSearch.Size = New System.Drawing.Size(186, 38)
+        Me.txtSearch.Size = New System.Drawing.Size(153, 38)
         Me.txtSearch.TabIndex = 6
         Me.txtSearch.Text = "Search..."
         Me.txtSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left
@@ -172,10 +172,10 @@
         '
         Me.dtpEndDate.FontSize = ReaLTaiizor.Extension.Poison.PoisonDateTimeSize.Medium
         Me.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpEndDate.Location = New System.Drawing.Point(255, 57)
+        Me.dtpEndDate.Location = New System.Drawing.Point(204, 57)
         Me.dtpEndDate.MinimumSize = New System.Drawing.Size(0, 29)
         Me.dtpEndDate.Name = "dtpEndDate"
-        Me.dtpEndDate.Size = New System.Drawing.Size(200, 29)
+        Me.dtpEndDate.Size = New System.Drawing.Size(153, 29)
         Me.dtpEndDate.TabIndex = 11
         '
         'Label1
@@ -199,11 +199,11 @@
         Me.btnResetFilters.Image = Nothing
         Me.btnResetFilters.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnResetFilters.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.btnResetFilters.Location = New System.Drawing.Point(897, 57)
+        Me.btnResetFilters.Location = New System.Drawing.Point(717, 57)
         Me.btnResetFilters.Name = "btnResetFilters"
         Me.btnResetFilters.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnResetFilters.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.btnResetFilters.Size = New System.Drawing.Size(124, 36)
+        Me.btnResetFilters.Size = New System.Drawing.Size(104, 36)
         Me.btnResetFilters.TabIndex = 18
         Me.btnResetFilters.Text = "Reset"
         Me.btnResetFilters.TextAlignment = System.Drawing.StringAlignment.Center
@@ -220,11 +220,11 @@
         Me.btnApplyFilters.Image = Nothing
         Me.btnApplyFilters.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnApplyFilters.InactiveColor = System.Drawing.Color.RoyalBlue
-        Me.btnApplyFilters.Location = New System.Drawing.Point(897, 13)
+        Me.btnApplyFilters.Location = New System.Drawing.Point(717, 13)
         Me.btnApplyFilters.Name = "btnApplyFilters"
         Me.btnApplyFilters.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnApplyFilters.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.btnApplyFilters.Size = New System.Drawing.Size(124, 36)
+        Me.btnApplyFilters.Size = New System.Drawing.Size(104, 36)
         Me.btnApplyFilters.TabIndex = 19
         Me.btnApplyFilters.Text = "Apply"
         Me.btnApplyFilters.TextAlignment = System.Drawing.StringAlignment.Center
@@ -236,7 +236,7 @@
         Me.dtpStartDate.Location = New System.Drawing.Point(30, 57)
         Me.dtpStartDate.MinimumSize = New System.Drawing.Size(0, 29)
         Me.dtpStartDate.Name = "dtpStartDate"
-        Me.dtpStartDate.Size = New System.Drawing.Size(200, 29)
+        Me.dtpStartDate.Size = New System.Drawing.Size(153, 29)
         Me.dtpStartDate.TabIndex = 9
         '
         'cmbSource
@@ -252,16 +252,16 @@
         Me.cmbSource.HoverSelectionColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.cmbSource.IntegralHeight = False
         Me.cmbSource.ItemHeight = 26
-        Me.cmbSource.Location = New System.Drawing.Point(470, 54)
+        Me.cmbSource.Location = New System.Drawing.Point(373, 57)
         Me.cmbSource.Name = "cmbSource"
-        Me.cmbSource.Size = New System.Drawing.Size(202, 32)
+        Me.cmbSource.Size = New System.Drawing.Size(153, 32)
         Me.cmbSource.StartIndex = 0
         Me.cmbSource.TabIndex = 8
         '
         'lblEndDate
         '
         Me.lblEndDate.AutoSize = True
-        Me.lblEndDate.Location = New System.Drawing.Point(252, 41)
+        Me.lblEndDate.Location = New System.Drawing.Point(208, 41)
         Me.lblEndDate.Name = "lblEndDate"
         Me.lblEndDate.Size = New System.Drawing.Size(57, 13)
         Me.lblEndDate.TabIndex = 2
@@ -285,7 +285,7 @@
         Me.pnlHeader.Location = New System.Drawing.Point(15, 15)
         Me.pnlHeader.Name = "pnlHeader"
         Me.pnlHeader.Padding = New System.Windows.Forms.Padding(15, 10, 15, 10)
-        Me.pnlHeader.Size = New System.Drawing.Size(1054, 55)
+        Me.pnlHeader.Size = New System.Drawing.Size(854, 55)
         Me.pnlHeader.TabIndex = 2
         '
         'lblTitle
@@ -317,10 +317,10 @@
         Me.pnlActions.Controls.Add(Me.btnRefresh)
         Me.pnlActions.Controls.Add(Me.btnClearHistory)
         Me.pnlActions.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlActions.Location = New System.Drawing.Point(15, 598)
+        Me.pnlActions.Location = New System.Drawing.Point(15, 502)
         Me.pnlActions.Name = "pnlActions"
         Me.pnlActions.Padding = New System.Windows.Forms.Padding(10)
-        Me.pnlActions.Size = New System.Drawing.Size(1054, 48)
+        Me.pnlActions.Size = New System.Drawing.Size(854, 44)
         Me.pnlActions.TabIndex = 3
         '
         'btnClose
@@ -335,7 +335,7 @@
         Me.btnClose.Image = Nothing
         Me.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnClose.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.btnClose.Location = New System.Drawing.Point(897, 9)
+        Me.btnClose.Location = New System.Drawing.Point(698, 0)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnClose.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
@@ -356,7 +356,7 @@
         Me.btnRefresh.Image = Nothing
         Me.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnRefresh.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnRefresh.Location = New System.Drawing.Point(769, 9)
+        Me.btnRefresh.Location = New System.Drawing.Point(568, 0)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnRefresh.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
@@ -377,7 +377,7 @@
         Me.btnClearHistory.Image = Nothing
         Me.btnClearHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnClearHistory.InactiveColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.btnClearHistory.Location = New System.Drawing.Point(30, 9)
+        Me.btnClearHistory.Location = New System.Drawing.Point(30, 0)
         Me.btnClearHistory.Name = "btnClearHistory"
         Me.btnClearHistory.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.btnClearHistory.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
@@ -391,7 +391,7 @@
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1084, 661)
+        Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.pnlMain)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog

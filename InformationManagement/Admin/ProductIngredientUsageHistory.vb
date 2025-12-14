@@ -111,9 +111,9 @@ Public Class ProductIngredientUsageHistory
             With dgvUsageHistory
                 .AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
                 .RowTemplate.Height = 35
-                .DefaultCellStyle.Font = New Font("Segoe UI", 8.25)
+                .DefaultCellStyle.Font = New Font("Segoe UI", 9)
                 .DefaultCellStyle.Padding = New Padding(8, 4, 8, 4)
-                .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI SemiBold", 9)
+                .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI", 9, FontStyle.Bold)
                 .AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 250, 250)
                 .ReadOnly = True
                 .AllowUserToAddRows = False

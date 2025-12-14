@@ -242,8 +242,8 @@ Partial Class MenuItems
         Me.Edit.Location = New System.Drawing.Point(350, 25)
         Me.Edit.Margin = New System.Windows.Forms.Padding(2)
         Me.Edit.Name = "Edit"
-        Me.Edit.PressedBorderColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.Edit.PressedColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.Edit.PressedBorderColor = System.Drawing.Color.Teal
+        Me.Edit.PressedColor = System.Drawing.Color.Teal
         Me.Edit.Size = New System.Drawing.Size(99, 35)
         Me.Edit.TabIndex = 17
         Me.Edit.Text = "Edit"

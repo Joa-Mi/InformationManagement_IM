@@ -9,13 +9,26 @@ Module modDB
     Public cmd As MySqlCommand
     Public cmdRead As MySqlDataReader
 
-    Public db_server As String = "localhost"
-    Public db_uid As String = "root"
-    Public db_pwd As String = ""
-    Public db_name As String = "tabeya_system"
+    ' ✔ OLD STATIC VALUES - Now loaded from config
+    ' Public db_server As String = "localhost"
+    ' Public db_uid As String = "root"
+    ' Public db_pwd As String = ""
+    ' Public db_name As String = "tabeya_system"
 
-    Public strConnection As String =
-        $"Server={db_server};Port=3306;Database={db_name};Uid={db_uid};Pwd={db_pwd};SslMode=None;AllowUserVariables=True;"
+    ' ✔ Connection string - now dynamic from config
+    Public strConnection As String = ""
+
+    ' ✔ Get and update connection string from config
+    Public Function GetConnectionString() As String
+        ' Load config if not already loaded
+        If String.IsNullOrEmpty(DatabaseConfig.Host) Then
+            DatabaseConfig.LoadConfig()
+        End If
+
+        ' Build connection string from config
+        strConnection = $"Server={DatabaseConfig.Host};Port={DatabaseConfig.Port};Database={DatabaseConfig.Database};Uid={DatabaseConfig.Username};Pwd={DatabaseConfig.Password};SslMode=None;AllowUserVariables=True;"
+        Return strConnection
+    End Function
 
     Public Structure LoggedUser
         Dim id As Integer
@@ -28,14 +41,15 @@ Module modDB
 
     Public CurrentLoggedUser As LoggedUser
 
-    ' ✔ Open connection
+    ' ✔ Open connection - NOW USES CONFIG
     Public Sub openConn()
         Try
             If conn.State = ConnectionState.Open Then conn.Close()
-            conn.ConnectionString = strConnection
+            conn.ConnectionString = GetConnectionString() ' ← Uses config now!
             conn.Open()
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
+            MsgBox("Database Connection Error: " & ex.Message & vbCrLf & vbCrLf &
+                   "Please check your database configuration.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
