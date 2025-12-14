@@ -39,22 +39,20 @@ Partial Class Inventory
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.RoundedPane22 = New InformationManagement.RoundedPane2()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.pnlSummaryCards = New System.Windows.Forms.Panel()
         Me.btnNotifications = New ReaLTaiizor.Controls.Button()
         Me.TextBox1 = New ReaLTaiizor.Controls.BigTextBox()
         Me.Category = New ReaLTaiizor.Controls.ComboBoxEdit()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         CType(Me.InventoryGrid, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RoundedPane21.SuspendLayout()
-        Me.RoundedPane22.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSummaryCards.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'InventoryGrid
@@ -266,8 +264,6 @@ Partial Class Inventory
         '
         Me.RoundedPane21.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane21.Controls.Add(Me.Label5)
-        Me.RoundedPane21.Controls.Add(Me.Label3)
         Me.RoundedPane21.CornerRadius = 20
         Me.RoundedPane21.FillColor = System.Drawing.Color.White
         Me.RoundedPane21.Location = New System.Drawing.Point(14, 15)
@@ -275,90 +271,16 @@ Partial Class Inventory
         Me.RoundedPane21.Size = New System.Drawing.Size(485, 101)
         Me.RoundedPane21.TabIndex = 35
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(22, 60)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(25, 30)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "8"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(23, 25)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 19)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Total Items"
-        '
         'RoundedPane22
         '
         Me.RoundedPane22.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane22.BorderColor = System.Drawing.Color.LightGray
-        Me.RoundedPane22.Controls.Add(Me.Label4)
-        Me.RoundedPane22.Controls.Add(Me.Label10)
-        Me.RoundedPane22.Controls.Add(Me.Label11)
-        Me.RoundedPane22.Controls.Add(Me.PictureBox8)
         Me.RoundedPane22.CornerRadius = 20
         Me.RoundedPane22.FillColor = System.Drawing.Color.White
         Me.RoundedPane22.Location = New System.Drawing.Point(535, 15)
         Me.RoundedPane22.Name = "RoundedPane22"
         Me.RoundedPane22.Size = New System.Drawing.Size(485, 101)
         Me.RoundedPane22.TabIndex = 36
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label4.Location = New System.Drawing.Point(25, 98)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(0, 13)
-        Me.Label4.TabIndex = 6
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label10.Location = New System.Drawing.Point(23, 25)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(78, 19)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Total Value"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(33, 42)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(164, 30)
-        Me.Label11.TabIndex = 3
-        Me.Label11.Text = "₱10,750,000.00"
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(131, 20)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 4
-        Me.PictureBox8.TabStop = False
         '
         'pnlSummaryCards
         '
@@ -427,6 +349,76 @@ Partial Class Inventory
         Me.Category.StartIndex = 0
         Me.Category.TabIndex = 54
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(22, 60)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(25, 30)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "8"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(23, 25)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 19)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Total Items"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.Label4.Location = New System.Drawing.Point(25, 98)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(0, 13)
+        Me.Label4.TabIndex = 6
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.Label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label10.Location = New System.Drawing.Point(23, 25)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(78, 19)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "Total Value"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(33, 42)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(164, 30)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "₱10,750,000.00"
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(131, 20)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 4
+        Me.PictureBox8.TabStop = False
+        '
         'Inventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -443,17 +435,14 @@ Partial Class Inventory
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Splitter1)
+        Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Inventory"
         Me.Text = "Inventory"
         CType(Me.InventoryGrid, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RoundedPane21.ResumeLayout(False)
-        Me.RoundedPane21.PerformLayout()
-        Me.RoundedPane22.ResumeLayout(False)
-        Me.RoundedPane22.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSummaryCards.ResumeLayout(False)
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

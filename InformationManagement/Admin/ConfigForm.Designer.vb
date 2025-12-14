@@ -26,168 +26,27 @@ Partial Class ConfigForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblHost = New System.Windows.Forms.Label()
-        Me.lblPort = New System.Windows.Forms.Label()
-        Me.lblDatabase = New System.Windows.Forms.Label()
-        Me.lblUsername = New System.Windows.Forms.Label()
-        Me.lblPassword = New System.Windows.Forms.Label()
-        Me.btnTest = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.txtHost = New InformationManagement.RoundedTextBox()
-        Me.txtPort = New InformationManagement.RoundedTextBox()
         Me.RoundedPane21 = New InformationManagement.RoundedPane2()
         Me.txtPassword = New InformationManagement.RoundedTextBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.lblUsername = New System.Windows.Forms.Label()
         Me.txtUsername = New InformationManagement.RoundedTextBox()
+        Me.lblDatabase = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.txtDatabase = New InformationManagement.RoundedTextBox()
+        Me.btnTest = New System.Windows.Forms.Button()
+        Me.txtPort = New InformationManagement.RoundedTextBox()
+        Me.txtHost = New InformationManagement.RoundedTextBox()
+        Me.lblHost = New System.Windows.Forms.Label()
+        Me.lblPort = New System.Windows.Forms.Label()
         Me.RoundedPane21.SuspendLayout()
         Me.SuspendLayout()
         '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.lblTitle.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblTitle.Location = New System.Drawing.Point(117, 22)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(224, 25)
-        Me.lblTitle.TabIndex = 0
-        Me.lblTitle.Text = "Database Configuration"
-        '
-        'lblHost
-        '
-        Me.lblHost.AutoSize = True
-        Me.lblHost.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHost.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblHost.Location = New System.Drawing.Point(65, 87)
-        Me.lblHost.Name = "lblHost"
-        Me.lblHost.Size = New System.Drawing.Size(111, 19)
-        Me.lblHost.TabIndex = 1
-        Me.lblHost.Text = "Host/IP Address:"
-        '
-        'lblPort
-        '
-        Me.lblPort.AutoSize = True
-        Me.lblPort.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblPort.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblPort.Location = New System.Drawing.Point(296, 87)
-        Me.lblPort.Name = "lblPort"
-        Me.lblPort.Size = New System.Drawing.Size(37, 19)
-        Me.lblPort.TabIndex = 3
-        Me.lblPort.Text = "Port:"
-        '
-        'lblDatabase
-        '
-        Me.lblDatabase.AutoSize = True
-        Me.lblDatabase.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblDatabase.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblDatabase.Location = New System.Drawing.Point(64, 162)
-        Me.lblDatabase.Name = "lblDatabase"
-        Me.lblDatabase.Size = New System.Drawing.Size(109, 19)
-        Me.lblDatabase.TabIndex = 5
-        Me.lblDatabase.Text = "Database Name:"
-        '
-        'lblUsername
-        '
-        Me.lblUsername.AutoSize = True
-        Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblUsername.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblUsername.Location = New System.Drawing.Point(64, 235)
-        Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(74, 19)
-        Me.lblUsername.TabIndex = 7
-        Me.lblUsername.Text = "Username:"
-        '
-        'lblPassword
-        '
-        Me.lblPassword.AutoSize = True
-        Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.lblPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblPassword.Location = New System.Drawing.Point(64, 304)
-        Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(70, 19)
-        Me.lblPassword.TabIndex = 9
-        Me.lblPassword.Text = "Password:"
-        '
-        'btnTest
-        '
-        Me.btnTest.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btnTest.FlatAppearance.BorderSize = 0
-        Me.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTest.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.btnTest.Location = New System.Drawing.Point(242, 379)
-        Me.btnTest.Name = "btnTest"
-        Me.btnTest.Size = New System.Drawing.Size(167, 36)
-        Me.btnTest.TabIndex = 11
-        Me.btnTest.Text = "Test Connection"
-        Me.btnTest.UseVisualStyleBackColor = False
-        '
-        'btnSave
-        '
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.btnSave.FlatAppearance.BorderSize = 0
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(279, 447)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(130, 36)
-        Me.btnSave.TabIndex = 12
-        Me.btnSave.Text = "Save && Continue"
-        Me.btnSave.UseVisualStyleBackColor = False
-        '
-        'btnCancel
-        '
-        Me.btnCancel.BackColor = System.Drawing.Color.White
-        Me.btnCancel.FlatAppearance.BorderSize = 0
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.btnCancel.Location = New System.Drawing.Point(208, 447)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(65, 36)
-        Me.btnCancel.TabIndex = 13
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        '
-        'txtHost
-        '
-        Me.txtHost.BackColor = System.Drawing.Color.Transparent
-        Me.txtHost.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.txtHost.Location = New System.Drawing.Point(67, 112)
-        Me.txtHost.MaxLength = 32767
-        Me.txtHost.MinimumSize = New System.Drawing.Size(50, 20)
-        Me.txtHost.Multiline = False
-        Me.txtHost.Name = "txtHost"
-        Me.txtHost.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.txtHost.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtHost.ReadOnly = False
-        Me.txtHost.Size = New System.Drawing.Size(216, 36)
-        Me.txtHost.TabIndex = 14
-        Me.txtHost.TextBoxBackColor = System.Drawing.Color.White
-        Me.txtHost.TextColor = System.Drawing.Color.Black
-        Me.txtHost.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtPort
-        '
-        Me.txtPort.BackColor = System.Drawing.Color.Transparent
-        Me.txtPort.FocusBorderColor = System.Drawing.Color.DarkGray
-        Me.txtPort.Location = New System.Drawing.Point(299, 112)
-        Me.txtPort.MaxLength = 32767
-        Me.txtPort.MinimumSize = New System.Drawing.Size(50, 20)
-        Me.txtPort.Multiline = False
-        Me.txtPort.Name = "txtPort"
-        Me.txtPort.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.txtPort.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtPort.ReadOnly = False
-        Me.txtPort.Size = New System.Drawing.Size(110, 36)
-        Me.txtPort.TabIndex = 15
-        Me.txtPort.TextBoxBackColor = System.Drawing.Color.White
-        Me.txtPort.TextColor = System.Drawing.Color.Black
-        Me.txtPort.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
         'RoundedPane21
         '
+        Me.RoundedPane21.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RoundedPane21.BackColor = System.Drawing.Color.Transparent
         Me.RoundedPane21.BorderColor = System.Drawing.Color.LightGray
         Me.RoundedPane21.Controls.Add(Me.txtPassword)
@@ -227,7 +86,53 @@ Partial Class ConfigForm
         Me.txtPassword.TabIndex = 15
         Me.txtPassword.TextBoxBackColor = System.Drawing.Color.White
         Me.txtPassword.TextColor = System.Drawing.Color.Black
-        Me.txtPassword.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.TextFont = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblTitle.Location = New System.Drawing.Point(117, 22)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(224, 25)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "Database Configuration"
+        '
+        'lblPassword
+        '
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.lblPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblPassword.Location = New System.Drawing.Point(64, 304)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(70, 19)
+        Me.lblPassword.TabIndex = 9
+        Me.lblPassword.Text = "Password:"
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.White
+        Me.btnCancel.FlatAppearance.BorderSize = 0
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.btnCancel.Location = New System.Drawing.Point(208, 447)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(65, 36)
+        Me.btnCancel.TabIndex = 13
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
+        'lblUsername
+        '
+        Me.lblUsername.AutoSize = True
+        Me.lblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.lblUsername.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblUsername.Location = New System.Drawing.Point(64, 235)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(74, 19)
+        Me.lblUsername.TabIndex = 7
+        Me.lblUsername.Text = "Username:"
         '
         'txtUsername
         '
@@ -245,7 +150,32 @@ Partial Class ConfigForm
         Me.txtUsername.TabIndex = 15
         Me.txtUsername.TextBoxBackColor = System.Drawing.Color.White
         Me.txtUsername.TextColor = System.Drawing.Color.Black
-        Me.txtUsername.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.TextFont = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'lblDatabase
+        '
+        Me.lblDatabase.AutoSize = True
+        Me.lblDatabase.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.lblDatabase.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblDatabase.Location = New System.Drawing.Point(64, 162)
+        Me.lblDatabase.Name = "lblDatabase"
+        Me.lblDatabase.Size = New System.Drawing.Size(109, 19)
+        Me.lblDatabase.TabIndex = 5
+        Me.lblDatabase.Text = "Database Name:"
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnSave.FlatAppearance.BorderSize = 0
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Location = New System.Drawing.Point(279, 447)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(130, 36)
+        Me.btnSave.TabIndex = 12
+        Me.btnSave.Text = "Save && Continue"
+        Me.btnSave.UseVisualStyleBackColor = False
         '
         'txtDatabase
         '
@@ -263,7 +193,78 @@ Partial Class ConfigForm
         Me.txtDatabase.TabIndex = 15
         Me.txtDatabase.TextBoxBackColor = System.Drawing.Color.White
         Me.txtDatabase.TextColor = System.Drawing.Color.Black
-        Me.txtDatabase.TextFont = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDatabase.TextFont = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'btnTest
+        '
+        Me.btnTest.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnTest.FlatAppearance.BorderSize = 0
+        Me.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTest.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.btnTest.Location = New System.Drawing.Point(242, 379)
+        Me.btnTest.Name = "btnTest"
+        Me.btnTest.Size = New System.Drawing.Size(167, 36)
+        Me.btnTest.TabIndex = 11
+        Me.btnTest.Text = "Test Connection"
+        Me.btnTest.UseVisualStyleBackColor = False
+        '
+        'txtPort
+        '
+        Me.txtPort.BackColor = System.Drawing.Color.Transparent
+        Me.txtPort.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtPort.Location = New System.Drawing.Point(299, 112)
+        Me.txtPort.MaxLength = 32767
+        Me.txtPort.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtPort.Multiline = False
+        Me.txtPort.Name = "txtPort"
+        Me.txtPort.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtPort.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPort.ReadOnly = False
+        Me.txtPort.Size = New System.Drawing.Size(110, 36)
+        Me.txtPort.TabIndex = 15
+        Me.txtPort.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtPort.TextColor = System.Drawing.Color.Black
+        Me.txtPort.TextFont = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'txtHost
+        '
+        Me.txtHost.BackColor = System.Drawing.Color.Transparent
+        Me.txtHost.FocusBorderColor = System.Drawing.Color.DarkGray
+        Me.txtHost.Location = New System.Drawing.Point(67, 112)
+        Me.txtHost.MaxLength = 32767
+        Me.txtHost.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.txtHost.Multiline = False
+        Me.txtHost.Name = "txtHost"
+        Me.txtHost.NormalBorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtHost.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtHost.ReadOnly = False
+        Me.txtHost.Size = New System.Drawing.Size(216, 36)
+        Me.txtHost.TabIndex = 14
+        Me.txtHost.TextBoxBackColor = System.Drawing.Color.White
+        Me.txtHost.TextColor = System.Drawing.Color.Black
+        Me.txtHost.TextFont = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'lblHost
+        '
+        Me.lblHost.AutoSize = True
+        Me.lblHost.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHost.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblHost.Location = New System.Drawing.Point(65, 87)
+        Me.lblHost.Name = "lblHost"
+        Me.lblHost.Size = New System.Drawing.Size(111, 19)
+        Me.lblHost.TabIndex = 1
+        Me.lblHost.Text = "Host/IP Address:"
+        '
+        'lblPort
+        '
+        Me.lblPort.AutoSize = True
+        Me.lblPort.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.lblPort.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblPort.Location = New System.Drawing.Point(296, 87)
+        Me.lblPort.Name = "lblPort"
+        Me.lblPort.Size = New System.Drawing.Size(37, 19)
+        Me.lblPort.TabIndex = 3
+        Me.lblPort.Text = "Port:"
         '
         'ConfigForm
         '
@@ -272,6 +273,7 @@ Partial Class ConfigForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(838, 612)
         Me.Controls.Add(Me.RoundedPane21)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False

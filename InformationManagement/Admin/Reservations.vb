@@ -5,7 +5,6 @@ Public Class Reservations
 
     Private Sub Reservations_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadReservations()
-        ButtonHoverHelper.ApplyToAllButtons(Me, Color.FromArgb(26, 38, 50))
     End Sub
 
     ' ==========================================
