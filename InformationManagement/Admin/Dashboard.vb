@@ -53,7 +53,7 @@ Public Class Dashboard
     ' ============================================
     ' FILTERS COMBO BOX EVENT HANDLER
     ' ============================================
-    Private Sub Filters_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub Filters_SelectedIndexChanged(sender As Object, e As EventArgs) 
         Try
             ' Reload dashboard data based on selected filter
             LoadDashboardData()
@@ -61,34 +61,12 @@ Public Class Dashboard
             MessageBox.Show("Error applying filter: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    Private Sub InitializeFiltersComboBox()
-        Try
-            ' Clear existing items
-            Filters.Items.Clear()
-
-            ' Add filter options
-            Filters.Items.Add("Daily")
-            Filters.Items.Add("Weekly")
-            Filters.Items.Add("Monthly")
-            Filters.Items.Add("Yearly")
-
-            ' Set default to Weekly
-            Filters.SelectedIndex = 1  ' Index 1 = "Weekly"
-
-            ' Set ComboBox style
-            Filters.DropDownStyle = ComboBoxStyle.DropDownList
-
-        Catch ex As Exception
-            MessageBox.Show("Error initializing filters: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
 
     ' ============================================
-    ' GET DATE FILTER SQL CONDITION - Updated to use Weekly as default
+    ' GET DATE FILTER SQL CONDITION
     ' ============================================
     Private Function GetDateFilterCondition(dateColumn As String) As String
-        ' Get selected filter, default to "Weekly" if nothing selected
-        Dim selectedFilter As String = If(Filters.SelectedItem?.ToString(), "Weekly")
+        Dim selectedFilter As String = If(Filters.SelectedItem?.ToString(), "Yearly")
 
         Select Case selectedFilter
             Case "Daily"
@@ -108,12 +86,10 @@ Public Class Dashboard
                 Return $"YEAR({dateColumn}) = YEAR(CURDATE())"
 
             Case Else
-                ' Default to Weekly instead of Yearly
-                Return $"{dateColumn} >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)"
+                ' Default to current year
+                Return $"YEAR({dateColumn}) = YEAR(CURDATE())"
         End Select
     End Function
-
-
 
     Private Sub Filters_DrawItem(sender As Object, e As DrawItemEventArgs)
 

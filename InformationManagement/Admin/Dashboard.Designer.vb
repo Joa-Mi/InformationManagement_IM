@@ -868,7 +868,7 @@ Partial Class Dashboard
         Legend4.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Tall
         Legend4.TitleSeparatorColor = System.Drawing.Color.DimGray
         Me.Chart2.Legends.Add(Legend4)
-        Me.Chart2.Location = New System.Drawing.Point(4, 5)
+        Me.Chart2.Location = New System.Drawing.Point(4, 0)
         Me.Chart2.Name = "Chart2"
         Series4.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Left
         Series4.ChartArea = "ChartArea1"
@@ -900,7 +900,7 @@ Partial Class Dashboard
         Series4.Points.Add(DataPoint12)
         Series4.Points.Add(DataPoint13)
         Me.Chart2.Series.Add(Series4)
-        Me.Chart2.Size = New System.Drawing.Size(414, 218)
+        Me.Chart2.Size = New System.Drawing.Size(414, 223)
         Me.Chart2.TabIndex = 1
         Me.Chart2.Text = "Chart2"
         Title2.Alignment = System.Drawing.ContentAlignment.TopLeft
@@ -1006,7 +1006,7 @@ Partial Class Dashboard
         Me.AutoScroll = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.GhostWhite
-        Me.ClientSize = New System.Drawing.Size(1130, 749)
+        Me.ClientSize = New System.Drawing.Size(1113, 749)
         Me.Controls.Add(Me.Filters)
         Me.Controls.Add(Me.RoundedPane223)
         Me.Controls.Add(Me.lblTitle)

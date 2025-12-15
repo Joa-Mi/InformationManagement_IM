@@ -298,7 +298,7 @@ Partial Class MenuItems
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridMenu.ColumnHeadersHeight = 40
+        Me.DataGridMenu.ColumnHeadersHeight = 50
         Me.DataGridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
